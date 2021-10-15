@@ -50,12 +50,11 @@ function doneTask(index){
 }
 
 function reloadTasks(){
-    if (localStorage.getItem("infiniteScrollEnabled") === null) {
-       return
+    if (localStorage.getItem("listtasks") != null) {
+        let myTasks = localStorage.getItem('listtasks')
+        arrayTasks = JSON.parse(myTasks)
+        showTasks()
     }
-    let myTasks = localStorage.getItem('listtasks')
-    arrayTasks = JSON.parse(myTasks)
-    showTasks()
 }
 
 function clearInput(){
