@@ -22,8 +22,7 @@ function showTasks(){
     })
     alltasks.innerHTML = newLi
     localStorage.setItem('listtasks',JSON.stringify(arrayTasks))
-    input.value = ''
-    
+    input.value = ''   
 }
 
 function addTask(){
@@ -51,6 +50,9 @@ function doneTask(index){
 }
 
 function reloadTasks(){
+    if (localStorage.getItem("infiniteScrollEnabled") === null) {
+       return
+    }
     let myTasks = localStorage.getItem('listtasks')
     arrayTasks = JSON.parse(myTasks)
     showTasks()
