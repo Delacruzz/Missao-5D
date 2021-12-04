@@ -14,4 +14,4 @@
 - [x] Corrigido problemas referentes a atualizações da lista de tarefas.
 
 #### Este projeto está hospedado aqui no Github.
-<p><a href="https://delacruzz.github.io/Missao-5D/" target="_blank" rel="noopener">Clique aqui para visualizar!</p>
+<p><a href="https://dlzzdev.github.io/Missao-5D/" target="_blank" rel="noopener">Clique aqui para visualizar!</p>
